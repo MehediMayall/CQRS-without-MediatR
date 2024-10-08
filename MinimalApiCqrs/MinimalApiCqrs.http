@@ -1,0 +1,39 @@
+@endPoint = http://localhost:3500
+@BookId = 4cae94ed-87ab-44aa-b1e2-a399331b7628
+
+GET {{endPoint}}/books/
+Accept: application/json
+
+###
+
+GET {{endPoint}}/books/{{BookId}}
+Accept: application/json
+
+
+###
+
+POST {{endPoint}}/books/
+Content-Type: application/json
+
+{
+    "title":"Domain-Driven Design",
+    "author": "Eric Evans",
+    "numberOfPages": 560
+}
+###
+
+PUT {{endPoint}}/books/
+Content-Type: application/json
+
+{
+    "id": "{{BookId}}",
+    "title":"Domain-Driven Design - Volume-2",
+    "author": "Eric Evans",
+    "numberOfPages": 560
+}
+###
+
+DELETE {{endPoint}}/books/{{BookId}}
+Accept: application/json
+
+###
