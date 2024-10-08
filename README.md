@@ -1,3 +1,3 @@
 # CQRS-without-MediatR
 
-A simple Asp.net Minimal API application to demonstrate how to implement CQRS (Command Query Responsibility Segregation).
+A straightforward Asp.Net Minimal API that demonstrates the implementation of **CQRS** (Command Query Responsibility Segregation) without requiring any library.
