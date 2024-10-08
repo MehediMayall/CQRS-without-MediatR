@@ -1,6 +1,6 @@
 namespace MinimalApiCqrs;
 
-public  class InMemonryDatabase{
+public  class InMemoryDatabase{
     public static readonly Dictionary<Guid, Book> Books = new();
 
 }
