@@ -1,0 +1,47 @@
+@host = http://localhost:3500
+@movieId = 13e1dabd-c863-463f-b029-4e1375d81808
+
+
+
+### GET ALL MOVIES
+GET {{host}}/movies
+Content-Type: application/json
+Accept: application/json
+
+
+### GET A MOVIE
+GET {{host}}/movies/{{createMovie.response.body.$.id}}
+Content-Type: application/json
+Accept: application/json
+
+###
+
+### -- SAVE A MOVIE
+# @name createMovie
+POST {{host}}/movies
+Content-Type: application/json
+
+{
+    "name": "Deadpool & Wolverine",
+    "director": "Shawn Levy",
+    "country": "usa",
+    "rating": 7.8
+}
+
+### UPDATE MOVIE
+PUT {{host}}/movies
+Content-Type: application/json
+
+{
+    "id": "{{createMovie.response.body.$.id}}",
+    "name": "Deadpool & Wolverine",
+    "director": "Shawn Levy",
+    "country": "USA",
+    "rating": 7.8
+}
+
+### DELETE A MOVIE
+DELETE  {{host}}/movies/{{movieId}}
+Content-Type: application/json
+Accept: application/json
+
