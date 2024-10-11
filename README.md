@@ -7,7 +7,39 @@ A straightforward Asp.Net Minimal API that demonstrates the implementation of **
 
 ### Folder Structure
 ```md
-
+.
+├── MinimalApiCqrs
+│   ├── Database
+│   │   └── InMemoryDatabase.cs
+│   ├── EndPoints
+│   │   └── Movies.cs
+│   ├── Entities
+│   │   ├── EntityBase.cs
+│   │   └── Movie.cs
+│   ├── MinimalApiCqrs.csproj
+│   ├── MinimalApiCqrs.http
+│   ├── Program.cs
+│   ├── Properties
+│   │   └── launchSettings.json
+│   ├── Repositoris
+│   │   ├── Abstractions
+│   │   │   ├── IMovieReadRepository.cs
+│   │   │   ├── IMovieWriteRepository.cs
+│   │   │   ├── IReadRepository.cs
+│   │   │   └── IWriteRepository.cs
+│   │   ├── MovieReadRepository.cs
+│   │   └── MovieWriteRepository.cs
+│   ├── appsettings.Development.json
+│   ├── appsettings.json
+│   ├── handlers
+│   │   ├── command
+│   │   │   ├── AddBookCommand.cs
+│   │   │   ├── DeleteBookCommand.cs
+│   │   │   └── UpdateBookCommand.cs
+│   │   └── queries
+│   │       ├── GetBookByIdQuery.cs
+│   │       └── GetBookQuery.cs
+└── MinimalApiCqrs.sln
 
 ```
 
