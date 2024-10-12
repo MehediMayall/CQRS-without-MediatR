@@ -1,7 +1,7 @@
 # CQRS-without-MediatR
 
 A straightforward Asp.Net Minimal API that demonstrates the implementation of **CQRS** (Command Query Responsibility Segregation) without requiring any library.
-The aim of this project is to learn how to physically divide classes into two distinct responsibilities, in order to achieve scalability, maintainability, performance and adapt two mind set .
+The aim of this project is to learn how to physically divide classes into two distinct responsibilities, in order to achieve scalability, maintainability, performance and adapt to two mindsets.
 It is highly adaptable in navigating complex domains, allowing for independent customization of the data structure for read and write operations.
 
 ![CQRS Architecture](https://github.com/user-attachments/assets/8e889640-63b5-4873-a91e-737aa115a5a3)
