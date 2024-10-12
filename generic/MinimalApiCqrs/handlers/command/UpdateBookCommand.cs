@@ -1,3 +1,8 @@
+// In this struct we have two interactions with the database.
+// First, we have to retrieve the movie from the database.
+// Second, we have to replace the old movie with the new one and update the movie in the database.
+// This has to be done in loosely coupled way.
+
 namespace MinimalApiCqrs;
 
 public class UpdateMovieCommand(IMovieWriteRepository repo, IMovieReadRepository readRepo){
