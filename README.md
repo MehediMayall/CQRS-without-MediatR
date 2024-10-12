@@ -52,3 +52,8 @@ It is used to transfer data from application to the database in more generic way
 
 ### Dependency Flow
 ![Dependency Flow](https://github.com/user-attachments/assets/8c1ca414-d653-4500-8c23-047a80972ce9)
+
+
+### Loose Coupling Through Mediator Pattern
+Here is an example of how an update operation functions in a loosely coupled manner. 
+![Loose Coupling](https://github.com/user-attachments/assets/76e6093c-42d1-4361-8633-8e98f072961c)
